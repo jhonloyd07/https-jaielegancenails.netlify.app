@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jai Elegance Nails</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --gold: #d4af37;
+    --black: #111;
+    --beige: #f7f3ee;
+    --white: #ffffff;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--beige);
+    color: var(--black);
+  }
+
+  /* HERO */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    letter-spacing: 4px;
+  }
+
+  .hero p {
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #ddd;
+  }
+
+  .btn {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 2px;
+  }
+
+  .btn:hover {
+    background: var(--gold);
+    color: black;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+
+  /* SERVICES */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* PRICE LIST */
+  .price {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .price span {
+    float: right;
+    color: var(--gold);
+  }
+
+  /* GALLERY */
+  .gallery img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.03);
+  }
+
+  /* CONTACT */
+  .contact {
+    background: var(--black);
+    color: white;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 12px;
+    background: var(--gold);
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  /* FLOAT BUTTON */
+  .float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #777;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>JAI</h1>
+  <p>Elegance Nails • Polished to Perfection</p>
+  <a href="#book" class="btn">Book Now</a>
+</div>
+
+<!-- SERVICES -->
+<section>
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">Luxury Gel Polish</div>
+    <div class="card">Minimal Nail Art</div>
+    <div class="card">Gel Removal Care</div>
+    <div class="card">Nail Strength Treatment</div>
+  </div>
+</section>
+
+<!-- PRICE LIST -->
+<section>
+  <h2>Price List</h2>
+  <div class="card">
+    <div class="price">Gel Polish <span>₱150 - ₱300</span></div>
+    <div class="price">Nail Art <span>₱200+</span></div>
+    <div class="price">Gel Removal <span>₱100</span></div>
+    <div class="price">Full Set Nails <span>₱400+</span></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <h2>Our Work</h2>
+  <div class="grid gallery">
+    <img src="https://images.unsplash.com/photo-1610992015732-2449b0c1f9f3?auto=format&fit=crop&w=600&q=80">
+    <img src="https://images.unsplash.com/photo-1610992238410-3d3f9f1c7c24?auto=format&fit=crop&w=600&q=80">
+    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80">
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="contact" id="book">
+  <h2>Book Appointment</h2>
+
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Phone Number" required>
+    <input type="text" placeholder="Service Needed">
+    <textarea rows="4" placeholder="Message / Preferred Date"></textarea>
+    <button type="submit">Send Booking Request</button>
+  </form>
+</section>
+
+<!-- FLOAT WHATSAPP BUTTON -->
+<a class="float" href="https://wa.me/639000000000" target="_blank">
+  Chat
+</a>
+
+<footer>
+  © 2026 Jai Elegance Nails • Polished to Perfection
+</footer>
+
+</body>
+</html>
